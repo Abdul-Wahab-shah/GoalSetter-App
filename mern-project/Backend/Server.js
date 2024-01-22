@@ -1,0 +1,15 @@
+const express=require("express")
+const dotenv=require("dotenv").config()
+const port= process.env.PORT ||5000
+const {errorHandler}=require("./middleware/errormiddleware.js")
+ 
+
+const app=express()
+app.use(express.json())
+app.use(express.urlencoded({extented:false}))
+app.use(errorHandler)
+
+app.use("/api/goals/",require("./routes/goalRoutes"))
+
+
+app.listen(port,()=>console.log(`Server is started on port ${port}`))
