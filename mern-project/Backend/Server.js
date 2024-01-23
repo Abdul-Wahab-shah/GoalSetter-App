@@ -1,8 +1,11 @@
 const express=require("express")
+const colors=require("colors")
 const dotenv=require("dotenv").config()
 const port= process.env.PORT ||5000
 const {errorHandler}=require("./middleware/errormiddleware.js")
- 
+ const connectDB=require("./config/bd.js")
+
+connectDB()
 
 const app=express()
 app.use(express.json())

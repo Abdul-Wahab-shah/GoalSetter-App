@@ -1,0 +1,30 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "GoalSetter app for youtube tutorial",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Backend/Server.js",
+    "dev": "nodemon Backend/Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulwahab030910/GoalSetter-App.git"
+  },
+  "author": "Abdul Wahab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulwahab030910/GoalSetter-App/issues"
+  },
+  "homepage": "https://github.com/abdulwahab030910/GoalSetter-App#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
