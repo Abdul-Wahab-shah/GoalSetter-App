@@ -12,7 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({extented:false}))
 app.use(errorHandler)
 
-app.use("/api/goals/",require("./routes/goalRoutes"))
+app.use("/api/goals/",require("./routes/goalRoutes.js"))
+app.use("/api/users/",require("./routes/userRoutes.js"))
 
 
 app.listen(port,()=>console.log(`Server is started on port ${port}`))
